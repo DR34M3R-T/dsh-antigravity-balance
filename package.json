@@ -1,0 +1,38 @@
+{
+  "name": "dsh-antigravity-balance",
+  "version": "1.2.0",
+  "license": "MIT",
+  "description": "Antigravity 余额展示适配插件：同时适配 dsh-pet 桌宠气泡与 dsh-model-allowance 额度卡片（含设置页）",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "antigravity",
+    "dsh-pet",
+    "dsh-model-allowance"
+  ],
+  "homepage": "https://github.com/DR34M3R-T/dsh-antigravity-balance#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DR34M3R-T/dsh-antigravity-balance.git"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-settings"
+      ]
+    }
+  }
+}
