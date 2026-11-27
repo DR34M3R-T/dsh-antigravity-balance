@@ -75,4 +75,4 @@ dsh plugin --profile web add github:DR34M3R-T/dsh-antigravity-balance
 
 ## 许可
 
-MIT
+[MIT](LICENSE)。Antigravity 图标为其所有者的商标，仅用于标识对应厂商。
