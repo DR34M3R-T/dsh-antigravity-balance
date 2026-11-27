@@ -29,7 +29,15 @@
 
 ## 安装
 
-### 方式一：在 DSH 插件页通过 Git 安装
+### 方式一：通过 DSH CLI 安装（推荐）
+
+支持 `web` profile，在终端运行：
+
+```bash
+dsh plugin --profile web add github:DR34M3R-T/dsh-antigravity-balance
+```
+
+### 方式二：在 DSH 插件页通过 Git 安装
 
 在 DSH 侧边栏打开 **插件 → 安装**，填入：
 
@@ -37,9 +45,19 @@
 git+https://github.com/DR34M3R-T/dsh-antigravity-balance.git
 ```
 
-### 方式二：本地目录软链接安装
+### 方式三：本地目录软链接安装
 
 将本仓库放到本地目录（例如 `~/.dsh/plugins/dsh-antigravity-balance`），并在 DSH `web` profile 中安装或 `link:` 引入，随后重启 DSH。
+
+## 兼容与权限说明
+
+- **支持 Profile**：`web`
+- **DSH 兼容版本**：DeepSeek Harness `>=0.2.1`
+- **网络与外部服务**：仅向你在 DSH 中为 `antigravity` 配置的 `baseURL` 对应的 `/api/accounts` 发起 HTTP 请求（用于读取账号池配额）；状态页跳转链接指向 `https://aistudio.google.com/status`。
+- **本地存储与权限**：
+  - `ANTIGRAVITY_ADMIN_KEY` 保存在 DSH 官方凭证存储中，绝不回显明文；
+  - 可选的「控制台快捷启动」路径保存在 `~/.dsh/antigravity-balance-config.json`，仅在你手动点击控制台按钮或测试拉起时启动所选本地程序；
+  - 绝不读取 `~/.antigravity_tools/` 下的任何本地应用文件。
 
 ## 使用配置
 
