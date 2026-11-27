@@ -5,6 +5,12 @@
 - **[dsh-pet](https://github.com/PC2005-cloud/dsh-pet)**：桌宠 3 页自定义余额气泡与 6 档余额动画。
 - **[dsh-model-allowance](https://github.com/MeiK2333/dsh-model-allowance)**：输入框旁额度徽标、多窗口明细卡片、平台状态灯、官方 Antigravity 矢量图标及控制台快捷拉起。
 
+## 效果预览
+
+| dsh-model-allowance 额度卡片 | dsh-pet 桌宠余额气泡 |
+| :---: | :---: |
+| ![dsh-model-allowance 额度卡片](docs/screenshots/model-allowance.png) | ![dsh-pet 桌宠余额气泡](docs/screenshots/dsh-pet.png) |
+
 ## 核心特性
 
 - **双插件可选适配，互不依赖**：通过 Cordis 可选依赖注入分别挂载 `petApi7340`（[dsh-pet](https://github.com/PC2005-cloud/dsh-pet)）与 `modelAllowance`（[dsh-model-allowance](https://github.com/MeiK2333/dsh-model-allowance)），只装其中一个或同时安装均可正常工作。
