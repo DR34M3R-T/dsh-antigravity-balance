@@ -40,15 +40,15 @@
 支持 `web` profile，在终端运行：
 
 ```bash
-dsh plugin --profile web add github:DR34M3R-T/dsh-antigravity-balance
+dsh plugin --profile web add dsh-antigravity-balance
 ```
 
-### 方式二：在 DSH 插件页通过 Git 安装
+也可以在 DSH 侧边栏打开 **插件 → 安装**，直接填入包名 `dsh-antigravity-balance`。
 
-在 DSH 侧边栏打开 **插件 → 安装**，填入：
+### 方式二：从 GitHub 源码安装
 
-```text
-git+https://github.com/DR34M3R-T/dsh-antigravity-balance.git
+```bash
+dsh plugin --profile web add github:DR34M3R-T/dsh-antigravity-balance
 ```
 
 ### 方式三：本地目录软链接安装

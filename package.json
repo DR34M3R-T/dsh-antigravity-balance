@@ -2,6 +2,7 @@
   "name": "dsh-antigravity-balance",
   "version": "1.2.0",
   "license": "MIT",
+  "author": "DR34M3R-T",
   "description": "Antigravity 余额展示适配插件：同时适配 dsh-pet 桌宠气泡与 dsh-model-allowance 额度卡片（含设置页）",
   "keywords": [
     "dsh",
@@ -12,10 +13,20 @@
     "dsh-model-allowance"
   ],
   "homepage": "https://github.com/DR34M3R-T/dsh-antigravity-balance#readme",
+  "bugs": {
+    "url": "https://github.com/DR34M3R-T/dsh-antigravity-balance/issues"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DR34M3R-T/dsh-antigravity-balance.git"
   },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
   "type": "module",
   "main": "./index.js",
   "exports": {
